@@ -2,14 +2,16 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
+import About from './components/About/About';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <About />
       
       {/* Estas secciones son temporales para probar la navegación */}
-      <section id="home" style={{height: '100vh', paddingTop: '70px', background: '#f8f9fa'}}>
+      <section id="home" style={{height: '100vh', paddingTop: '70px', background: '#358ee8ff'}}>
         <div style={{textAlign: 'center', padding: '2rem'}}>
           <h1>Sección Home - Hero irá aquí</h1>
           <p>Esta es una sección temporal para probar la navegación</p>
