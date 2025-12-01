@@ -1,31 +1,37 @@
-/* src/App.css */
+
+:root {
+    --neon-color: #00ffff;
+    --dark-bg: #121827;
+    --main-text: #ecf0f1;
+    --secondary-text: #bdc3c7;
+    --dark-card-bg: #1e2535;
+    --accent-purple: #764ba2;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--main-text);
+    background: var(--dark-bg);
 }
 
 .App {
-  text-align: left;
+    text-align: left;
 }
-
-/* Estilos temporales para las secciones de prueba */
 section {
-  scroll-margin-top: 70px; /* Para que la navegación no cubra el contenido */
+    scroll-margin-top: 70px;
 }
 
-h1 {
-  margin-bottom: 1rem;
-  color: #2c3e50;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-text);
 }
 
 p {
-  font-size: 1.1rem;
-  color: #555;
+    color: var(--secondary-text);
 }

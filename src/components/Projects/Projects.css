@@ -1,0 +1,238 @@
+
+:root {
+    --neon-color: #00ffff;
+    --dark-bg: #121827;
+    --main-text: #ecf0f1;
+    --secondary-text: #bdc3c7;
+    --dark-card-bg: #1e2535;
+    --accent-purple: #764ba2;
+}
+
+.projects {
+    padding: 100px 0;
+    background: var(--dark-bg);
+    min-height: 100vh;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-title {
+    font-size: 3rem;
+    color: var(--neon-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 0 0 7px var(--neon-color);
+}
+
+.projects-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--neon-color) 0%, var(--accent-purple) 100%);
+    margin: 0 auto 1.5rem;
+    border-radius: 2px;
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+.projects-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    border: 2px solid var(--neon-color);
+    color: var(--neon-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--neon-color);
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px var(--neon-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--dark-card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+    border-color: var(--neon-color);
+}
+
+.project-card.featured {
+    border: 2px solid var(--neon-color);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--neon-color);
+    color: var(--dark-bg);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+.project-image {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, var(--dark-card-bg) 0%, #2a3142 100%);
+    overflow: hidden;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text);
+    background: linear-gradient(135deg, var(--dark-card-bg) 0%, #2a3142 100%);
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.5;
+    color: var(--neon-color);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    width: 50px;
+    height: 50px;
+    background: var(--dark-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neon-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: var(--dark-card-bg);
+    color: var(--neon-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--neon-color);
+}
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: var(--main-text);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: rgba(0, 255, 255, 0.1);
+    color: var(--neon-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-filters {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title {
+        font-size: 2.2rem;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+}

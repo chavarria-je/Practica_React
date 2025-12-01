@@ -1,18 +1,14 @@
-/* src/components/About/About.css */
 
-/* --- VARIABLES DE COLOR --- */
 :root {
-    /* Colores basados en el tema oscuro/ciberpunk del Header */
+    
     --neon-color: #00ffff;
     --dark-bg: #121827;
     --main-text: #ecf0f1;
     --secondary-text: #bdc3c7;
     --dark-card-bg: #1e2535;
-    --accent-purple: #764ba2; /* Color secundario para degradado */
+    --accent-purple: #764ba2;
 }
-
 .about {
-    /* Fondo oscuro principal */
     padding: 100px 0;
     background: var(--dark-bg);
     min-height: 100vh;
@@ -26,7 +22,6 @@
     padding: 0 20px;
 }
 
-/* Header de la sección */
 .about-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -34,17 +29,17 @@
 
 .about-title {
     font-size: 3rem;
-    color: var(--neon-color); /* Título cian brillante */
+    color: var(--neon-color); 
     margin-bottom: 1rem;
     font-weight: 700;
-    /* Efecto de brillo */
+    
     text-shadow: 0 0 7px var(--neon-color), 0 0 10px rgba(0, 255, 255, 0.4);
 }
 
 .about-divider {
     width: 80px;
     height: 4px;
-    /* Degradado cian/púrpura */
+    
     background: linear-gradient(135deg, var(--neon-color) 0%, var(--accent-purple) 100%);
     margin: 0 auto 1.5rem;
     border-radius: 2px;
@@ -57,7 +52,6 @@
     margin: 0 auto;
 }
 
-/* -------------------- ESTILOS DEL AVATAR -------------------- */
 .avatar-section {
     margin-bottom: 30px;
     text-align: center;
@@ -68,8 +62,7 @@
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--neon-color); /* Borde cian */
-    /* Brillo alrededor del avatar */
+    border: 5px solid var(--neon-color); 
     box-shadow: 0 0 10px var(--neon-color), 0 0 20px rgba(0, 255, 255, 0.5);
     transition: transform 0.3s ease;
 }
@@ -77,9 +70,7 @@
 .about-avatar:hover {
     transform: scale(1.05);
 }
-/* ------------------------------------------------------------ */
 
-/* Contenido principal */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,10 +78,9 @@
     align-items: start;
 }
 
-/* Información personal */
 .about-info h3 {
     font-size: 1.8rem;
-    color: var(--neon-color); /* Texto cian */
+    color: var(--neon-color); 
     margin-bottom: 1.5rem;
     font-weight: 600;
 }
@@ -98,11 +88,10 @@
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: var(--secondary-text); /* Párrafos gris claro */
+    color: var(--secondary-text); 
     margin-bottom: 1.5rem;
 }
 
-/* Estadísticas */
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -113,7 +102,7 @@
 .stat-item {
     text-align: center;
     padding: 1.5rem 1rem;
-    background: var(--dark-card-bg); /* Fondo de tarjeta oscuro */
+    background: var(--dark-card-bg);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
     border: 1px solid rgba(0, 255, 255, 0.2); 
@@ -128,7 +117,7 @@
 .stat-number {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--neon-color); /* Número cian */
+    color: var(--neon-color); 
     margin-bottom: 0.5rem;
 }
 
@@ -138,15 +127,15 @@
     font-weight: 500;
 }
 
-/* Botón CV */
+
 .btn-cv {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    /* Degradado cian/púrpura */
+    
     background: linear-gradient(135deg, var(--neon-color) 0%, var(--accent-purple) 100%);
-    color: var(--dark-bg); /* Texto oscuro para contraste */
+    color: var(--dark-bg); 
     border: none;
     border-radius: 50px;
     font-size: 1rem;
@@ -165,7 +154,7 @@
     font-size: 0.9rem;
 }
 
-/* Habilidades técnicas */
+
 .about-skills h3 {
     font-size: 1.5rem;
     color: var(--main-text); 
@@ -201,14 +190,14 @@
 
 .skill-bar {
     height: 8px;
-    background: #343a40; /* Fondo de barra oscuro */
+    background: #343a40; 
     border-radius: 4px;
     overflow: hidden;
 }
 
 .skill-progress {
     height: 100%;
-    /* Degradado cian/púrpura */
+    
     background: linear-gradient(135deg, var(--neon-color) 0%, var(--accent-purple) 100%);
     border-radius: 4px;
     transition: width 1.5s ease-in-out;
@@ -219,7 +208,7 @@
     from { width: 0% !important; }
 }
 
-/* Intereses */
+
 .interests h4 {
     font-size: 1.2rem;
     color: var(--main-text);
@@ -238,7 +227,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 1rem;
-    background: var(--dark-card-bg); /* Fondo de tarjeta oscuro */
+    background: var(--dark-card-bg);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(0, 255, 255, 0.2);
@@ -264,8 +253,6 @@
     color: var(--secondary-text);
     font-weight: 500;
 }
-
-/* Responsive */
 @media (max-width: 968px) {
     .about-content {
         grid-template-columns: 1fr;
@@ -291,7 +278,6 @@
         font-size: 2.5rem;
     }
 
-    /* En móvil, las estadísticas cambian a una columna */
     .about-stats {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -302,7 +288,6 @@
     }
 
     .interests-grid {
-        /* En móvil estrecho, volvemos a una columna para los intereses */
         grid-template-columns: 1fr;
         gap: 0.8rem;
     }

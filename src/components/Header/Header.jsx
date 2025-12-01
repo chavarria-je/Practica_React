@@ -1,4 +1,4 @@
-// src/components/Header/Header.jsx
+
 import React, { useState } from 'react';
 import './Header.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -25,14 +25,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        {/* Logo de Hexágono y Brillo (REEMPLAZADO) */}
+       
         <div className="logo" onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>
           <div className="hexagon-logo">
-            <span className="logo-letter">J</span> {/* La letra de tu logo */}
+            <span className="logo-letter">J</span> 
           </div>
         </div>
 
-        {/* Navegación Desktop */}
+       
         <nav className="nav-desktop">
           <ul>
             <li><button onClick={() => scrollToSection('home')}>Inicio</button></li>
@@ -43,12 +43,11 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Botón Menú Móvil */}
         <button className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
 
-        {/* Navegación Móvil */}
+        
         <nav className={`nav-mobile ${isMenuOpen ? 'nav-mobile-open' : ''}`}>
           <ul>
             <li><button onClick={() => scrollToSection('home')}>Inicio</button></li>

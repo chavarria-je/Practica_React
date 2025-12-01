@@ -1,14 +1,12 @@
-/* src/components/Header/Header.css */
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* Cambié el fondo a un color oscuro para que el brillo se vea mejor, 
-     ajusta si deseas el fondo blanco original */
-  background: rgba(18, 24, 39, 0.95); /* Fondo oscuro */
+  background: rgba(18, 24, 39, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #00ffff55; /* Borde con color de brillo */
+  border-bottom: 1px solid #00ffff55; 
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -22,12 +20,6 @@
   align-items: center;
   height: 70px;
 }
-
-/* REGISTRO IMPORTANTE: 
-   Las reglas .logo h2 han sido ELIMINADAS. */
-/* .logo h2 { ... } */
-
-/* Navegación Desktop */
 .nav-desktop ul {
   display: flex;
   list-style: none;
@@ -39,7 +31,7 @@
 .nav-desktop button {
   background: none;
   border: none;
-  color: #ecf0f1; /* Texto claro para fondo oscuro */
+  color: #ecf0f1; 
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -49,29 +41,25 @@
 }
 
 .nav-desktop button:hover {
-  background: #00ffff33; /* Color de brillo semi-transparente */
-  color: #00ffff; /* Color de brillo */
+  background: #00ffff33; 
+  color: #00ffff; 
   transform: translateY(-2px);
 }
-
-/* Botón Menú Móvil */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #00ffff; /* Color de brillo */
+  color: #00ffff; 
   cursor: pointer;
   padding: 0.5rem;
 }
-
-/* Navegación Móvil */
 .nav-mobile {
   position: fixed;
   top: 70px;
   left: 0;
   width: 100%;
-  background: #121827; /* Fondo oscuro */
+  background: #121827; 
   border-top: 1px solid #00ffff55;
   transform: translateY(-100%);
   opacity: 0;
@@ -114,7 +102,6 @@
   color: #00ffff;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
@@ -128,35 +115,22 @@
     padding: 0 15px;
   }
 }
-
-
-/* ------------------------------------------- */
-/* --- Estilos del Logo de Hexágono (NUEVO) --- */
-/* ------------------------------------------- */
-
-/* Usé un color azul cian brillante como en tu imagen */
 :root {
     --neon-color: #00ffff;
-    --logo-size: 40px; /* Tamaño base del hexágono */
+    --logo-size: 40px; 
 }
-
-/* --- Contenedor del Logo (Hexágono) --- */
 .hexagon-logo {
   width: var(--logo-size);
-  height: calc(var(--logo-size) / 1.732); /* 40 / sqrt(3) */
+  height: calc(var(--logo-size) / 1.732); 
   background: transparent;
   position: relative;
-  /* Ajuste vertical para centrar el hexágono en el Header de 70px de alto */
   margin: calc(var(--logo-size) / 3.464) auto; 
-  /* Aplicar la sombra al contenedor principal también (lado central) */
   border-left: 2px solid var(--neon-color);
   border-right: 2px solid var(--neon-color);
   box-shadow: 0 0 5px var(--neon-color), 
               0 0 10px var(--neon-color), 
               0 0 20px var(--neon-color);
 }
-
-/* --- Lados Superior e Inferior del Hexágono --- */
 .hexagon-logo:before,
 .hexagon-logo:after {
   content: "";
@@ -164,36 +138,29 @@
   width: 100%;
   height: 100%;
   border: 2px solid var(--neon-color);
-  /* Sombra para el efecto de brillo (neon) */
   box-shadow: 0 0 5px var(--neon-color), 
               0 0 10px var(--neon-color), 
               0 0 20px var(--neon-color);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-/* --- Lados Inclinados Superiores (Rotado 60 grados) --- */
 .hexagon-logo:before {
-  top: calc(var(--logo-size) / -3.464); /* Aproximadamente -11.5px para el tamaño de 40px */
+  top: calc(var(--logo-size) / -3.464); 
   transform: rotate(60deg);
 }
-
-/* --- Lados Inclinados Inferiores (Rotado -60 grados) --- */
 .hexagon-logo:after {
   top: calc(var(--logo-size) / -3.464);
   transform: rotate(-60deg);
 }
-
-/* --- Letra dentro del Hexágono --- */
 .logo-letter {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centrar la letra */
+  transform: translate(-50%, -50%); 
   color: var(--neon-color);
-  font-size: calc(var(--logo-size) * 0.6); /* Aproximadamente 24px */
+  font-size: calc(var(--logo-size) * 0.6); 
   font-weight: 700;
   font-family: 'Arial', sans-serif; 
-  /* Añadir el mismo efecto de brillo a la letra */
   text-shadow: 0 0 5px var(--neon-color), 
                0 0 10px var(--neon-color);
   z-index: 10;

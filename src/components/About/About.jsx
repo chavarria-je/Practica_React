@@ -1,8 +1,8 @@
-// src/components/About/About.jsx
+
 import React from 'react';
 import './About.css';
 import { FaCode, FaGraduationCap, FaHeart, FaDownload } from 'react-icons/fa';
-// ❗ ASEGÚRATE DE QUE ESTA RUTA SEA CORRECTA PARA TU IMAGEN DE AVATAR ❗
+
 import AvatarImage from '../../assets/avatar.png'; 
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
   ];
 
   const downloadCV = () => {
-    // Aquí puedes agregar la lógica real para descargar CV
+   
     alert('Funcionalidad de descarga de CV - Agrega el archivo real a tu carpeta public/ o assets/ y actualiza esta función.');
   };
 
@@ -32,10 +32,9 @@ const About = () => {
         </div>
 
         <div className="about-content">
-          {/* Columna izquierda - Información personal y Avatar */}
+          
           <div className="about-info">
 
-            {/* Sección del Avatar (NUEVO) */}
             <div className="avatar-section">
               <img 
                 src={AvatarImage} 
@@ -45,23 +44,23 @@ const About = () => {
             </div>
 
             <div className="about-text">
-              {/* Hemos reemplazado [Tu Nombre] por Jorge Chavarria */}
+              {}
               <h3>¡Hola! Soy Jorge Chavarria 👋</h3> 
               <p>
-                Soy un apasionado desarrollador full stack con más de [X] años de experiencia 
+                Soy un apasionado desarrollador con más de 1 año de experiencia
                 creando aplicaciones web modernas y escalables. Me especializo en el ecosistema 
                 JavaScript y me encanta resolver problemas complejos con código elegante.
               </p>
               <p>
-                Cuando no estoy programando, me gusta [tus hobbies, ej: aprender nuevas tecnologías, 
+                Cuando no estoy programando, me gusta [tus hobbies,  aprender nuevas tecnologías, 
                 contribuir a proyectos open source, o hacer hiking]. Creo firmemente en el aprendizaje 
                 continuo y en compartir conocimiento con la comunidad.
               </p>
 
-              {/* Estadísticas */}
+              
               <div className="about-stats">
                 <div className="stat-item">
-                  <div className="stat-number">+20</div>
+                  <div className="stat-number">+10</div>
                   <div className="stat-label">Proyectos Completados</div>
                 </div>
                 <div className="stat-item">
@@ -69,12 +68,12 @@ const About = () => {
                   <div className="stat-label">Años de Experiencia</div>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">+15</div>
+                  <div className="stat-number">+1</div>
                   <div className="stat-label">Clientes Satisfechos</div>
                 </div>
               </div>
 
-              {/* Botón Descargar CV */}
+             
               <button className="btn-cv" onClick={downloadCV}>
                 <FaDownload className="btn-icon" />
                 Descargar CV
@@ -82,7 +81,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Columna derecha - Habilidades técnicas */}
+          
           <div className="about-skills">
             <h3>Habilidades Técnicas</h3>
             <div className="skills-container">
@@ -102,7 +101,6 @@ const About = () => {
               ))}
             </div>
 
-            {/* Intereses */}
             <div className="interests">
               <h4>Mis Intereses</h4>
               <div className="interests-grid">
