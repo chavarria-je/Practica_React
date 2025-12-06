@@ -9,7 +9,7 @@ import {
   FaGitAlt,
   FaFigma,
   FaMobile,
-  FaCloud
+  
 } from 'react-icons/fa';
 import {
   SiTypescript,
