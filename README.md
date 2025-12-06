@@ -1,3 +1,58 @@
+# 🚀 Portafolio Web - Jorge Chavarria
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+## 📋 Descripción del Proyecto
+
+Portafolio web personal desarrollado con React como parte de una práctica académica. Este proyecto implementa metodologías ágiles (Scrum) y control de versiones (Git) para demostrar habilidades técnicas y de gestión de proyectos.
+
+**Objetivo:** Mostrar proyectos, habilidades y experiencia profesional de manera interactiva y atractiva.
+
+## ✨ Características Principales
+
+- ✅ **Diseño Responsive** - Compatible con dispositivos móviles y desktop
+- ✅ **Secciones Completas** - Header, Hero, About, Projects, Skills, Contact, Footer
+- ✅ **Navegación Fluida** - Scroll suave entre secciones
+- ✅ **Formulario de Contacto** - Funcional con validación
+- ✅ **Animaciones CSS** - Efectos visuales modernos
+- ✅ **Tema Ciberpunk** - Diseño oscuro con acentos neón
+- ✅ **Git Flow** - Control de versiones profesional
+
+## 🛠️ Tecnologías Utilizadas
+
+### Frontend
+- **React 18** - Biblioteca principal
+- **React Icons** - Iconos SVG
+- **CSS3** - Estilos y animaciones
+- **HTML5** - Estructura semántica
+
+### Herramientas de Desarrollo
+- **Git & GitHub** - Control de versiones
+- **npm** - Gestión de paquetes
+- **VS Code** - Editor de código
+- **React Developer Tools** - Debugging
+
+### Metodologías
+- **Scrum** - Gestión ágil del proyecto
+- **Git Flow** - Estrategia de branching
+- **Responsive Design** - Mobile First
+
+## 🚀 Instrucciones de Instalación
+
+### Prerrequisitos
+- Node.js (v16 o superior)
+- npm o yarn
+- Git
+
+### Pasos de Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/chavarria-je/Practica_React.git
+   cd Practica_React
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

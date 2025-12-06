@@ -14,7 +14,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       category: 'fullstack',
-      github: 'https://github.com',
+      github: 'https://github.com/chavarria-je/flor',
       demo: 'https://demo.com',
       featured: true
     },
@@ -25,7 +25,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['React', 'Firebase', 'Material-UI'],
       category: 'frontend',
-      github: 'https://github.com',
+      github: 'https://github.com/Ditmar/api-leetcode',
       demo: 'https://demo.com',
       featured: true
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['JavaScript', 'API Integration', 'Chart.js'],
       category: 'frontend',
-      github: 'https://github.com',
+      github: 'https://github.com/Ditmar/leetcode-spa',
       demo: 'https://demo.com',
       featured: false
     },
@@ -47,7 +47,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['Express.js', 'JWT', 'Cloudinary', 'MySQL'],
       category: 'backend',
-      github: 'https://github.com',
+      github: 'https://github.com/Ditmar/api-leetcode',
       demo: 'https://demo.com',
       featured: false
     },
@@ -58,7 +58,7 @@ const Projects = () => {
       image: '/api/placeholder/400/250',
       technologies: ['React', 'CSS3', 'Git', 'Responsive'],
       category: 'frontend',
-      github: 'https://github.com',
+      github: 'https://github.com/chavarria-je/Practica_React',
       demo: 'https://demo.com',
       featured: false
     },

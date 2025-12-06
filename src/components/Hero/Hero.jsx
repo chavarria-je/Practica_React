@@ -1,6 +1,8 @@
+// src/components/Hero/Hero.jsx - VERSIÓN CORREGIDA
 import React from 'react';
 import './Hero.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
+import foto from '../../assets/foto1.png'; // Importa la imagen
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -81,11 +83,11 @@ const Hero = () => {
           <div className="hero-image">
             <div className="avatar-container">
               <img
-                src="/assets/avatar.png"
+                src={foto} // ← USA LA VARIABLE IMPORTADA
                 alt="Avatar de Jorge Chavarria"
                 className="hero-avatar"
                 onError={(e) => {
-                  
+                  console.error('Error cargando imagen:', e);
                   e.target.style.display = 'none';
                   const fallback = e.target.parentElement.querySelector('.avatar-fallback');
                   if (fallback) fallback.style.display = 'flex';
